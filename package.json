@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
     "start": "gulp",
-    "build": "NODE_ENV=production gulp",
+    "build": "set NODE_ENV=production&&gulp",
     "public": "rimraf dist && npm run build && node public.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/xiao555/Resume-it.git"
+    "url": "git@github.com:zttAsoiaf/resume-it.git"
   },
   "dependencies": {
     "jquery": "^3.1.1",

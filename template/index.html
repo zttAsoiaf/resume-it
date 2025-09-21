@@ -13,9 +13,16 @@
                 <dd><span>个人信息:</span> {{ name }} / {{ gender }} / {{ age }} / {{ grade }}</dd>
                 <dd><span>学校：</span>{{school}}</dd>
                 <dd><span>专业：</span>{{profession}}</dd>
+                <dd><span>学校：</span>{{school1}}</dd>
+                <dd><span>专业：</span>{{profession1}}</dd>
                 {% if english_level %}
                 <dd><span>英语水平:</span> {{ english_level }}</dd>
                 {% endif %}
+
+                {% if english_level %}
+                <dd><span>工作经验:</span> {{ 工作经验 }}</dd>
+                {% endif %}
+
                 {% if nickname %}
                 <dd><span>常用ID:</span> {{ nickname }}</dd>
                 {% endif %}
@@ -28,6 +35,11 @@
                 {% if online %}
                 <dd><span>在线简历:</span> <a href="{{ online }}" target="_blank">{{ online }}</a></dd>
                 {% endif %}
+            </li>
+            <li class="someRight">
+                <dt><i class="fa fa-bookmark"></i>个人评价</dt>
+                <dd>{{ 个人评价 }}</dd>
+                <dd>{{ 个人评价1 }}</dd>
             </li>
             <li class="someRight">
                 <dt><i class="fa fa-bookmark"></i>Contact. 联系方式</dt>
